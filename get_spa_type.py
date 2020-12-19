@@ -8,7 +8,7 @@ import glob
 
 # reverse translate a DNA sequence
 def revseq(seq):
-    transtab = string.maketrans('atcgATCG', 'tagcTAGC')
+    transtab = str.maketrans('atcgATCG', 'tagcTAGC')
     seq = seq[::-1]
     seq = seq.translate(transtab)
     return seq
